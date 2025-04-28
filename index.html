@@ -7,17 +7,23 @@
     <title>Some Shape</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type=""
+        href="https://cdn.vectorstock.com/i/1000v/71/24/air-quality-index-aqi-icon-on-white-vector-48997124.jpg" />
 </head>
 
-<body>
+<body id="body">
     <div>
         <div class="flex justify-center">
-            <img class="h-16 w-16"
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/American_International_University-Bangladesh_Monogram.svg/1200px-American_International_University-Bangladesh_Monogram.svg.png"
+            <img class="h-[150px]"
+                src="https://png.pngtree.com/png-vector/20220616/ourmid/pngtree-white-background-font-design-for-air-quality-index-vector-png-image_37136390.png"
                 alt="logo">
         </div>
-        <div class="flex justify-center">
-            <h1 class="font-bold text-4xl">American International University - Bangladesh</h1>
+        <div class="text-center">
+            <h1 class="font-bold text-4xl">Air Quality Index (AQI)</h1>
+            <br>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-full" onclick="changeColor()">
+                Change Color!
+            </button>
         </div>
 
         <!-- shape -->
@@ -78,10 +84,96 @@
                 </div>
                 <div></div>
                 <div></div>
-                <div class="border-red-400 border-2 h-[400px] row-span-1">2</div>
+
+                <!-- Left Down -->
+                <div class="border-red-400 border-2 h-[400px] row-span-1 p-4">
+                    <h1 class="font-bold text-2xl mb-4 text-gray-700">Login Form:</h1>
+                    <form id="">
+                        <div>
+                            <label class="block text-gray-700">Email ID</label>
+                            <input id="uEmail" type="" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700">Password</label>
+                            <input id="pass" type="password" minlength="8" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <br>
+                        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Log
+                            In
+                            <button>
+                    </form>
+                </div>
 
             </div>
-            <div class="border-purple-400 border-2">right</div>
+            <div class="border-purple-400 border-2 p-4">
+                <!-- <table class="border border-red-100 text-center">
+                    <thead>
+                        <tr>
+                            <th>CITY</th>
+                            <th>AQI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+                <table class="min-w-full table-fixed border border-gray-400 text-center">
+                    <h1 class="font-bold text-2xl mb-4 text-gray-700">AQI Information:</h1>
+                    <thead class="bg-blue-100">
+                        <tr>
+                            <th class="border border-gray-400 px-4 py-2">CITY</th>
+                            <th class="border border-gray-400 px-4 py-2">AQI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Dhaka</td>
+                            <td class="border border-gray-400 px-4 py-2">313</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Delhi</td>
+                            <td class="border border-gray-400 px-4 py-2">1,081</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Lahore</td>
+                            <td class="border border-gray-400 px-4 py-2">1,200</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Multan</td>
+                            <td class="border border-gray-400 px-4 py-2">2,553</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Beijing</td>
+                            <td class="border border-gray-400 px-4 py-2">208</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Hanoi</td>
+                            <td class="border border-gray-400 px-4 py-2">161</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Kolkata</td>
+                            <td class="border border-gray-400 px-4 py-2">218</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Shenyang</td>
+                            <td class="border border-gray-400 px-4 py-2">195</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Tokyo</td>
+                            <td class="border border-gray-400 px-4 py-2">28</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-blue-50">
+                            <td class="border border-gray-400 px-4 py-2">Helsinki</td>
+                            <td class="border border-gray-400 px-4 py-2">15</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
         </div>
         <!-- <div class="flex justify-center">
             <div>
@@ -94,6 +186,13 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function changeColor() {
+            const color = '#' + Math.random().toString(16).slice(2, 8);
+            document.getElementById('body').style.backgroundColor = color;
+        }
+    </script>
+
 </body>
 
 </html>
