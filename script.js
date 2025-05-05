@@ -66,7 +66,13 @@ document.getElementById("aForm").addEventListener("submit", function (e) {
     errorList.appendChild(li);
   });
 
+  // if (errors.length === 0) {
+  //   alert("Form submitted successfully!");
+  // }
+  // Submit if no errors
   if (errors.length === 0) {
-    alert("Form submitted successfully!");
+    console.log("submitting...");
+    this.submit();
   }
+  // document.getElementById("aForm").submit();
 });
